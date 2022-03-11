@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!-- Node -->
+    <node name="RoboGenius" pkg="robogenius" type="RoboGenius" output="screen" >
+        <param name="workspace_path" value="/home/hgsim/hg_ws" />
+
+    </node>
+
+</launch>

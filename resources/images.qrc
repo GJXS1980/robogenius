@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/icon.png</file>
+        <file>images/HG_GUI.png</file>
+        <file>images/HG_Logo.jpg</file>
+        <file>images/scara_operation_load.png</file>
+    </qresource>
+</RCC>

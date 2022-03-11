@@ -1,0 +1,2382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowDesign</class>
+ <widget class="QMainWindow" name="MainWindowDesign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1153</width>
+    <height>806</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QRosApp</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/images.qrc">
+    <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+  </property>
+  <property name="locale">
+   <locale language="English" country="Australia"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tab_manager">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1131</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="locale">
+     <locale language="English" country="Australia"/>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>workstation</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>510</y>
+        <width>171</width>
+        <height>104</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer_speed_1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_wspeed">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>w</string>
+           </property>
+           <property name="shortcut">
+            <string>W</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_spped_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton_aspeed">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>a</string>
+           </property>
+           <property name="shortcut">
+            <string>A</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_sspeed">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>s</string>
+           </property>
+           <property name="shortcut">
+            <string>S</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_dspeed">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>d</string>
+           </property>
+           <property name="shortcut">
+            <string>D</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer_speed_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_xspeed">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>x</string>
+           </property>
+           <property name="shortcut">
+            <string>X</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_speed_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_AGV">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>211</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AGV</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_nav_map">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>70</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nav_map</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_loadworld">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Load_world</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_buildmap">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Build_map</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_savemap">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save_map</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_Turtle">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>211</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Turtlebot3</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_loadworld_turtle">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Load_world</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_buildmap_turtle">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Build_map</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_nav_map_turtle">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>70</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nav_map</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_savemap_turtle">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save_map</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>171</width>
+        <height>234</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_cobot_joint1">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint1:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint1"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_cobot_joint2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint2:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint2"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_cobot_joint3">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint3:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint3"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_cobot_joint4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint4:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint4"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_cobot_joint5">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint5:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint5"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_cobot_joint6">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint6:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint6"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_cobot_joint7">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cobot_Joint7:</string>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEdit_cobot_joint7"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_language">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>640</y>
+        <width>61</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>中/英</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcd_display">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>630</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>12</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_time_start">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>680</y>
+        <width>51</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_time_stop">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>680</y>
+        <width>51</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_close_process">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>640</y>
+        <width>51</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(204, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>460</y>
+        <width>303</width>
+        <height>164</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Robot_states</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_robotstate_pose_x">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Pose_x:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_pose_x">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_robotstate_pose_y">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Pose_y:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_pose_y">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_robotstate_pose_z">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Pose_z:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_pose_z">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1" rowspan="2">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_robotstate_orient_x">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Orient_x:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_orient_x">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_robotstate_orient_y">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Orient_y:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_orient_y">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_robotstate_orient_x_3">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Orient_z:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_orient_z">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_robotstate_orient_x_4">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Orient_w:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEdit_robotstate_orient_w">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_getrobotstates">
+         <property name="text">
+          <string>Get_States</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_update_score">
+      <property name="geometry">
+       <rect>
+        <x>288</x>
+        <y>640</y>
+        <width>111</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 255, 0)</string>
+      </property>
+      <property name="text">
+       <string>Update_Score</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_map_path">
+         <property name="text">
+          <string>Map_Path: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_map_path"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>470</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="pushButton_getcurangle">
+         <property name="text">
+          <string>Get_Angle</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_Unitchange">
+         <property name="text">
+          <string>To_Deg</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>211</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Task_Number:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>--------</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>任务1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>任务2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>任务3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>任务4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>任务5</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>201</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_build_world">
+         <property name="text">
+          <string>Build_world</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_open_nav_config">
+         <property name="text">
+          <string>Nav_Goal</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_voice_navigation">
+         <property name="text">
+          <string>Nav_world</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_hand_nav">
+         <property name="text">
+          <string>Hand_Nav</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_voice_nav">
+         <property name="text">
+          <string>Voice_Nav</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton_remote">
+         <property name="text">
+          <string>Joint_Look</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pushButton_image_view">
+         <property name="text">
+          <string>Camera</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="pushButton_pick_check">
+         <property name="text">
+          <string>Pick_Cheak</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="pushButton_place_check">
+         <property name="text">
+          <string>Place_Cheak</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="pushButton_pickandplace">
+         <property name="text">
+          <string>Pick_Place</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_voice_Ctrl">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>360</y>
+        <width>97</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Voice_Ctrl</string>
+      </property>
+     </widget>
+     <widget class="QDockWidget" name="dock_status">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>10</y>
+        <width>325</width>
+        <height>762</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>325</width>
+        <height>756</height>
+       </size>
+      </property>
+      <property name="allowedAreas">
+       <set>Qt::RightDockWidgetArea</set>
+      </property>
+      <property name="windowTitle">
+       <string>Command Panel</string>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_2">
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>300</width>
+          <height>652</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Ros Master</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <property name="text">
+               <string>Ros Master Url</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLineEdit" name="line_edit_master">
+              <property name="text">
+               <string>http://192.168.1.2:11311/</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <property name="text">
+               <string>Ros IP</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="QLineEdit" name="line_edit_host">
+              <property name="text">
+               <string>192.168.1.67</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <property name="text">
+               <string>Ros Hostname</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0" colspan="2">
+             <widget class="QLineEdit" name="line_edit_topic">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>unused</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0" colspan="2">
+             <widget class="QCheckBox" name="checkbox_use_environment">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Use environment variables</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0" colspan="2">
+             <widget class="QCheckBox" name="checkbox_remember_settings">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Remember settings on startup</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>170</width>
+                <height>21</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="8" column="1">
+             <widget class="QPushButton" name="button_connect">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip">
+               <string>Set the target to the current joint trajectory state.</string>
+              </property>
+              <property name="statusTip">
+               <string>Clear all waypoints and set the target to the current joint trajectory state.</string>
+              </property>
+              <property name="text">
+               <string>Connect</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/images.qrc">:/images/HG_GUI.png</pixmap>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="quit_button">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>709</y>
+          <width>80</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:rgb(204, 0, 0)</string>
+        </property>
+        <property name="text">
+         <string>Quit</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <zorder>pushButton_update_score</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>groupBox_AGV</zorder>
+     <zorder>groupBox_Turtle</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>pushButton_language</zorder>
+     <zorder>lcd_display</zorder>
+     <zorder>pushButton_time_start</zorder>
+     <zorder>pushButton_time_stop</zorder>
+     <zorder>pushButton_close_process</zorder>
+     <zorder>groupBox_2</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>pushButton_voice_Ctrl</zorder>
+     <zorder>dock_status</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_scripts">
+     <attribute name="title">
+      <string>Scripts_Assistant</string>
+     </attribute>
+     <widget class="QLabel" name="label_robot_ns">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>50</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Robot :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_movecmd">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>87</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move_Cmd : </string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_robot_ns">
+      <property name="geometry">
+       <rect>
+        <x>119</x>
+        <y>11</y>
+        <width>70</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>cobot</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>scara</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_movecmd">
+      <property name="geometry">
+       <rect>
+        <x>119</x>
+        <y>42</y>
+        <width>94</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Joint</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pose</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cam</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cartesian</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_graph_cmd_rebuild">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>20</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rebuild</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_first_cell">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>361</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_cobot_robot">
+       <attribute name="title">
+        <string>Cobot</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_scara_robot">
+       <attribute name="title">
+        <string>Scara</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_scara_cmd">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>331</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::North</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideNone</enum>
+        </property>
+        <property name="usesScrollButtons">
+         <bool>true</bool>
+        </property>
+        <property name="documentMode">
+         <bool>false</bool>
+        </property>
+        <property name="tabsClosable">
+         <bool>false</bool>
+        </property>
+        <property name="movable">
+         <bool>false</bool>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab_scara_movej">
+         <attribute name="title">
+          <string>Move_J</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>171</width>
+            <height>120</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_scara_movej_joint1">
+             <property name="text">
+              <string>Joint1 : </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_scara_movej_joint1_value"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_scara_movej_joint2">
+             <property name="text">
+              <string>Joint2 : </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_scara_movej_joint2_value"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_scara_movej_joint3">
+             <property name="text">
+              <string>Joint3 : </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_scara_movej_joint3_value"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_scara_movej_joint4">
+             <property name="text">
+              <string>Joint4 : </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_scara_movej_joint4_value"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="pushButton_scara_movej">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>100</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_scara_movej_getjoint">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>60</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get_Joint</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_scara_movep">
+         <attribute name="title">
+          <string>Move_P</string>
+         </attribute>
+         <widget class="QLabel" name="label_scara_movep_posx">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>70</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Pos_X : </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_posy">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>100</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Pos_Y : </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_posz">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>130</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Pos_Z : </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_orienx">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>160</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Orien_X : </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_orieny">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>190</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Orien_Y : </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_orienz">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>220</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Orien_Z: </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_orienw">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>250</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Orien_W : </string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_posx_value">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>70</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_posy_value">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>100</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_posz_value">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>130</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_orienx_value">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>160</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_orieny_value">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>190</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_orienz_value">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>220</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movep_orienw_value">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>250</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_scara_movep">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>250</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_scara_movej_getpose">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>210</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get_Pose</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movep_group">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Group : </string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_scara_movep_group">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>30</y>
+            <width>86</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>big_grip</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>small_grip</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_scara_movec">
+         <attribute name="title">
+          <string>Move_C</string>
+         </attribute>
+         <widget class="QLabel" name="label_scara_movec_high">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>111</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>High (0-0.125):</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movec_group">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>111</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>             Group :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_scara_movec_vision_method">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>111</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Vision Method :</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_movec_high_value">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>30</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_scara_movec_group">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>60</y>
+            <width>86</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>big_grip</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>small_grip</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QComboBox" name="comboBox_scara_movec_vision">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>90</y>
+            <width>86</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>hsv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>yolo</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="pushButton_scara_movec">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>150</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_scara_movecl">
+         <attribute name="title">
+          <string>Move_L/C</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_scara_grip">
+         <attribute name="title">
+          <string>Grip</string>
+         </attribute>
+         <widget class="QToolBox" name="toolBox_scara_grip">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>261</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="page_robot_scara_grip_big">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>98</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Grip_Big</string>
+           </attribute>
+           <widget class="QLineEdit" name="lineEdit_scara_big_grip_joint1_value">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>0</y>
+              <width>81</width>
+              <height>25</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_scara_big_grip_joint2_value">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>30</y>
+              <width>81</width>
+              <height>25</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_scara_big_grip_joint1">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>67</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Joint1 :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_scara_big_grip_joint2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>67</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Joint2 :</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_scara_grip_big">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>30</y>
+              <width>89</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_robot_scara_grip_big">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>261</width>
+             <height>69</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Grip_Small</string>
+           </attribute>
+           <widget class="QLineEdit" name="lineEdit_scara_small_grip_joint2_value">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>30</y>
+              <width>81</width>
+              <height>25</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_scara_small_grip_joint1_value">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>0</y>
+              <width>81</width>
+              <height>25</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_scara_small_grip_joint2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>67</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Joint2 :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_scara_small_grip_joint1">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>67</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Joint1 :</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_scara_grip_small">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>30</y>
+              <width>89</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_scara_rivet">
+         <attribute name="title">
+          <string>Rivet</string>
+         </attribute>
+         <widget class="QLabel" name="label_scara_rivet">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>111</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Rivet_Distance:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_scara_rivet_value">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>30</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_scara_rivet">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>70</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_function">
+       <attribute name="title">
+        <string>Func</string>
+       </attribute>
+       <widget class="QToolBox" name="toolBox_robot_fun">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>251</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_time">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>98</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Delay Func</string>
+         </attribute>
+         <widget class="QLineEdit" name="lineEdit_robot_func_delay_time">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>0</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_robot_func_delay_time">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Time(s) :</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_robot_func_delay">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>89</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>98</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Page 2</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_graphic_cmd" native="true">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>10</y>
+        <width>571</width>
+        <height>491</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_user_graphic_cmd">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>510</y>
+        <width>104</width>
+        <height>70</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_script">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>510</y>
+        <width>104</width>
+        <height>70</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_scara_load_world">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load_Sim</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_status">
+     <attribute name="title">
+      <string>Ros Communications</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Logging</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QListView" name="view_logging"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1153</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;App</string>
+    </property>
+    <addaction name="action_Preferences"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionNew_File"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionSave_FIle"/>
+    <addaction name="actionClose_File"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuFile_F"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="action_Preferences">
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+  <action name="actionNew_File">
+   <property name="text">
+    <string>New File</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="actionSave_FIle">
+   <property name="text">
+    <string>Save File</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actionClose_File">
+   <property name="text">
+    <string>Close File</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_Quit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindowDesign</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quit_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindowDesign</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>861</x>
+     <y>798</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>469</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
