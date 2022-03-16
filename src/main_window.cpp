@@ -76,8 +76,8 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
     string ws_path = workspace_path;
 	const char * ws_name = ws_path.data(); // 工作空间路径
 
-    // ws_name = "/home/hgsim/hg_ws";
-    user_ws_str = user_name_str + ws_name;
+    // ws_name = "/home/hgsim/hg_ws";user_name_str
+    user_ws_str =  QString(ws_name);
     source_ws = "source " + user_ws_str;
 //    qDebug() << "user_name_str" << "source "+user_name_str+"/hg_ws/devel/setup.bash\nroslaunch cobot_moveit_config demo_gazebo.launch";
 
@@ -469,8 +469,8 @@ void MainWindow::on_pushButton_loadworld_clicked()
     // else
     // {
     //     load_world_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch cobot_moveit_config demo_gazebo.launch\n";
-    // }
-    load_world_cmd = source_ws +"/devel/setup.bash\nroslaunch cobot_moveit_config demo_gazebo.launch\n";
+    // }source_ws +"/devel/setup.bash\n
+    load_world_cmd = "roslaunch cobot_moveit_config demo_gazebo.launch\n";
     bash_load_world->start("bash");
     bash_load_world->write(load_world_cmd.toLocal8Bit());
     on_button_connect_clicked(true);
@@ -500,8 +500,8 @@ void MainWindow::on_pushButton_buildmap_clicked()
     // else
     // {
     //     build_map_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch turtlebot3_slam agv_slam.launch\n";
-    // }
-    build_map_cmd = source_ws + "/devel/setup.bash\nroslaunch turtlebot3_slam agv_slam.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    build_map_cmd = "roslaunch turtlebot3_slam agv_slam.launch\n";
     bash_build_map->start("bash");
     bash_build_map->write(build_map_cmd.toLocal8Bit());
     ui.pushButton_buildmap->setEnabled(false);
@@ -518,8 +518,8 @@ void MainWindow::on_pushButton_nav_map_clicked()
     // else
     // {
     //     nav_map_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch turtlebot3_navigation agv_navigation.launch\n";
-    // }
-    nav_map_cmd = source_ws + "/devel/setup.bash\nroslaunch turtlebot3_navigation agv_navigation.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    nav_map_cmd = "roslaunch turtlebot3_navigation agv_navigation.launch\n";
     bash_nav_map->start("bash");
     bash_nav_map->write(nav_map_cmd.toLocal8Bit());
     ui.pushButton_nav_map->setEnabled(false);
@@ -536,8 +536,8 @@ void MainWindow::on_pushButton_loadworld_turtle_clicked()
     // else
     // {
     //     load_turtle_world_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch all_world world_gazebo_turtlebot.launch\n";
-    // }
-    load_turtle_world_cmd = source_ws + "/devel/setup.bash\nroslaunch all_world world_gazebo_turtlebot.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    load_turtle_world_cmd = "roslaunch all_world world_gazebo_turtlebot.launch\n";
     bash_load_turtle_world->start("bash");
     bash_load_turtle_world->write(load_turtle_world_cmd.toLocal8Bit());
     ui.pushButton_loadworld_turtle->setEnabled(false);
@@ -554,8 +554,8 @@ void MainWindow::on_pushButton_buildmap_turtle_clicked()
     // else
     // {
     //     build_turtle_map_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping\n";
-    // }
-    build_turtle_map_cmd = source_ws + "/devel/setup.bash\nroslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping\n";
+    // }source_ws + "/devel/setup.bash\n
+    build_turtle_map_cmd = "roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping\n";
     bash_build_turtle_map->start("bash");
     bash_build_turtle_map->write(build_turtle_map_cmd.toLocal8Bit());
     ui.pushButton_buildmap_turtle->setEnabled(false);
@@ -572,8 +572,8 @@ void MainWindow::on_pushButton_nav_map_turtle_clicked()
     // else
     // {
     //     nav_turtle_map_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/station.yaml\n";
-    // }
-    nav_turtle_map_cmd = source_ws + "/devel/setup.bash\nroslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/station.yaml\n";
+    // }source_ws + "/devel/setup.bash\n
+    nav_turtle_map_cmd = "roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/station.yaml\n";
     bash_nav_turtle_map->start("bash");
     bash_nav_turtle_map->write(nav_turtle_map_cmd.toLocal8Bit());
     ui.pushButton_nav_map_turtle->setEnabled(false);
@@ -823,7 +823,7 @@ bool MainWindow::openTextConfigByStrem()
             count1++;
         }
         else{
-            user_graphic_cmd_str[count2] = aStream.readLine();
+            user_graphic_cmd_str[count2] = aStream.readLine() + "\n";
             count2++;
             user_graphic_cmd_index++;
         }
@@ -929,7 +929,7 @@ bool MainWindow::saveTextConfigByStrem()
     //"/home/pickle/Code/Qt/build-script_assistant-Desktop_Qt_5_9_9_GCC_64bit-Debug"
 //    QFile aFile(QCoreApplication::applicationDirPath() + "/" + save_file_name + ".txt");
     QFile aFile(save_file_path + "/" + save_file_name + ".txt");
-    qDebug() << save_file_path + "/" + save_file_name + ".txt";
+//    qDebug() << save_file_path + "/" + save_file_name + ".txt";
     if (!aFile.open(QIODevice::WriteOnly | QIODevice::Text))
         return false;
     QTextStream aStream(&aFile); //用文本流读取文件
@@ -938,6 +938,7 @@ bool MainWindow::saveTextConfigByStrem()
     {
         str_cmd = str_cmd + user_graphic_cmd[i]->text() + "\n" + user_graphic_cmd_str[i];
     }
+    //qDebug() << str_cmd;
     aStream<<str_cmd; //写入文本流
     aFile.close();//关闭文件
     return  true;
@@ -1064,7 +1065,7 @@ void MainWindow::on_pushButton_close_process_clicked()
     bash_killer->waitForFinished(200);
     bash_killer->write("kill $(ps -ef | grep agv_navigation | grep -v grep | awk '{print $2}')\n");
 	bash_killer->write("kill $(ps -ef | grep gazebo_pick | grep -v grep | awk '{print $2}')\n");
-    bash_killer->write("kill $(ps -ef | grep voice_nav | grep -v grep | awk '{print $2}')\n");
+    bash_killer->write("kill $(ps -ef | grep offline_command_voice | grep -v grep | awk '{print $2}')\n");
     bash_killer->write("kill $(ps -ef | grep voice_cmd | grep -v grep | awk '{print $2}')\n");
     bash_killer->write("kill $(ps -ef | grep gazebo_nav | grep -v grep | awk '{print $2}')\n");
     bash_killer->write("kill $(ps -ef | grep rqt_image_view | grep -v grep | awk '{print $2}')\n");
@@ -1073,6 +1074,7 @@ void MainWindow::on_pushButton_close_process_clicked()
     bash_killer->write("killall gzclient\n");
 	bash_killer->write("kill $(ps -ef | grep roscore | grep -v grep | awk '{print $2}')\n");
 	bash_killer->write("kill $(ps -ef | grep rviz | grep -v grep | awk '{print $2}')\n");
+    bash_killer->write("kill $(ps -ef | grep scara_gazebo | grep -v grep | awk '{print $2}')\n");
     bash_killer->waitForFinished(200);
     bash_cmd->close();
     bash_killer->close();
@@ -1114,9 +1116,9 @@ void MainWindow::on_pushButton_open_nav_config_clicked()
     //     nav_config_cmd = "gedit /root/hg_ws/src/workstation/turtlebot3/turtlebot3_navigation/config/goal_nav.yaml\n";
     // }
     string ws_path = workspace_path;
-	const char * ws_name = ws_path.data(); // 工作空间路径
-
-    nav_config_cmd = "gedit " + user_name_str + ws_name + "/src/workstation/turtlebot3/turtlebot3_navigation/config/goal_nav.yaml\n";
+    
+	//const char * ws_name = ws_path.data(); // 工作空间路径
+    nav_config_cmd = "gedit " +  user_ws_str + "/src/workstation/turtlebot3/turtlebot3_navigation/config/goal_nav.yaml\n";
     bash_nav_config->start("bash");
     bash_nav_config->write(nav_config_cmd.toLocal8Bit());
 }
@@ -1143,8 +1145,9 @@ void MainWindow::on_pushButton_build_world_clicked()
     // else
     // {
     //     build_world_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch all_world gazebo_spawn.launch\n";
-    // }
-    build_world_cmd = source_ws + "/devel/setup.bash\nroslaunch all_world gazebo_spawn.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    build_world_cmd = "roslaunch all_world gazebo_spawn.launch\n";
+    qDebug() << build_world_cmd;
     bash_build_world->start("bash");
     bash_build_world->write(build_world_cmd.toLocal8Bit());
     ui.pushButton_build_world->setEnabled(false);
@@ -1162,8 +1165,8 @@ void MainWindow::on_pushButton_pickandplace_clicked()
     // else
     // {
     //     pick_place_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch all_world gazebo_pick.launch\n";
-    // }
-    pick_place_cmd = source_ws + "/devel/setup.bash\nroslaunch all_world gazebo_pick.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    pick_place_cmd = "roslaunch all_world gazebo_pick.launch\n";
     bash_pick_place->start("bash");
     bash_pick_place->write(pick_place_cmd.toLocal8Bit());
     ui.pushButton_pickandplace->setEnabled(false);
@@ -1196,8 +1199,8 @@ void MainWindow::on_pushButton_pick_check_clicked()
     // else
     // {
     //     pick_check_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch motion_control pick_check.launch\n";
-    // }
-    pick_check_cmd = source_ws + "/devel/setup.bash\nroslaunch motion_control pick_check.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    pick_check_cmd = "roslaunch motion_control pick_check.launch\n";
     bash_pick_check->start("bash");
     bash_pick_check->write(pick_check_cmd.toLocal8Bit());
     ui.pushButton_pick_check->setEnabled(false);
@@ -1214,8 +1217,8 @@ void MainWindow::on_pushButton_place_check_clicked()
     // else
     // {
     //     place_check_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch motion_control place_check.launch\n";
-    // }
-    place_check_cmd = source_ws + "/devel/setup.bash\nroslaunch motion_control place_check.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    place_check_cmd = "roslaunch motion_control place_check.launch\n";
     bash_place_check->start("bash");
     bash_place_check->write(place_check_cmd.toLocal8Bit());
     ui.pushButton_place_check->setEnabled(false);
@@ -1223,7 +1226,7 @@ void MainWindow::on_pushButton_place_check_clicked()
 
 void MainWindow::on_pushButton_voice_nav_clicked()
 {
-    system("gnome-terminal -x bash -c 'roslaunch castlex_voice_system voice_nav.launch' &");
+    system("gnome-terminal -x bash -c 'roslaunch castlex_voice_system offline_command_voice.launch' &");
     ui.pushButton_voice_nav->setEnabled(false);
 }
 
@@ -1254,8 +1257,8 @@ void MainWindow::on_pushButton_voice_navigation_clicked()
     // else
     // {
     //     nav_world_cmd = "source /root/hg_ws/devel/setup.bash\nroslaunch all_world gazebo_nav.launch\n";
-    // }
-    nav_world_cmd = source_ws + "/devel/setup.bash\nroslaunch all_world gazebo_nav.launch\n";
+    // }source_ws + "/devel/setup.bash\n
+    nav_world_cmd = "roslaunch all_world gazebo_nav.launch\n";
     bash_nav_world->start("bash");
     bash_nav_world->write(nav_world_cmd.toLocal8Bit());
     ui.pushButton_voice_navigation->setEnabled(false);
@@ -1319,7 +1322,8 @@ void hg_gui::MainWindow::on_actionOpen_File_triggered()
 //    qDebug() << "file_name: "<< open_file_name;
     if (aFileName.isEmpty())
         return; //如果未选择文件，退出
-    openTextByStream(aFileName); //打开文件
+    QString Init_file_path = user_ws_str + "/src/workstation/motion_control/include/robot_arm_script_demo.py";
+    openTextByStream(Init_file_path); //打开文件
     openTextConfigByStrem();
     clicklabel_savefile_Init();
 }
@@ -1341,6 +1345,7 @@ void hg_gui::MainWindow::on_actionSave_FIle_triggered()
     if (aFileName.isEmpty())
         return;
     saveTextByStream(aFileName);
+    //saveTextByStream(Init_file_path);
     saveTextConfigByStrem();
 }
 
@@ -1407,7 +1412,8 @@ void hg_gui::MainWindow::on_pushButton_scara_movep_clicked()
     double orien_y = ui.lineEdit_scara_movep_orieny_value->text().toDouble();
     double orien_z = ui.lineEdit_scara_movep_orienz_value->text().toDouble();
     double orien_w = ui.lineEdit_scara_movep_orienw_value->text().toDouble();
-    QString pose_cmd= QString("    tutorial.Scara_Move_P(%1,%2,%3,%4,%5,%6,%7)\n").arg(pos_x).arg(pos_y).arg(pos_z).arg(orien_w).arg(orien_x).arg(orien_y).arg(orien_z);
+    QString arm_group = ui.comboBox_scara_movep_group->currentText();
+    QString pose_cmd= QString("    tutorial.Scara_Move_P(%1,%2,%3,%4,%5,%6,%7,\"%8\")\n").arg(pos_x).arg(pos_y).arg(pos_z).arg(orien_w).arg(orien_x).arg(orien_y).arg(orien_z).arg(arm_group);
     ui.plainTextEdit_script->insertPlainText(pose_cmd);
     cmd_user->setText("Move_Pos");
     cmd_user->show();
@@ -1623,13 +1629,24 @@ void hg_gui::MainWindow::on_pushButton_scara_grip_small_clicked()
 //加载 装配台scara 仿真场景
 void hg_gui::MainWindow::on_pushButton_scara_load_world_clicked()
 {
-    qDebug() << ui.plainTextEdit_script->textCursor().position();
+//    qDebug() << ui.plainTextEdit_script->textCursor().position();source_ws +"/devel/setup.bash\n
     qnode.scara_sim_flag = 1;
     bash_load_scara_world = new QProcess;
     QString load_scara_world_cmd;
-    load_scara_world_cmd = source_ws +"/devel/setup.bash\nroslaunch all_world scara_gazebo.launch\n";
+    load_scara_world_cmd = "roslaunch all_world scara_gazebo.launch\n";
     bash_load_scara_world->start("bash");
     bash_load_scara_world->write(load_scara_world_cmd.toLocal8Bit());
     on_button_connect_clicked(true);
     ui.pushButton_scara_load_world->setEnabled(false);
+}
+
+void hg_gui::MainWindow::on_pushButton_scara_build_world_clicked()
+{
+    bash_build_scara_world = new QProcess;
+    QString build_scara_world_cmd; //source_ws +"/devel/setup.bash\n
+    build_scara_world_cmd = "roslaunch all_world gazebo_spawn_scara.launch\n";
+    bash_build_scara_world->start("bash");
+    bash_build_scara_world->write(build_scara_world_cmd.toLocal8Bit());
+    on_button_connect_clicked(true);
+    ui.pushButton_scara_build_world->setEnabled(false);
 }

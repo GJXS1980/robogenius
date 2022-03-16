@@ -416,3 +416,12 @@ rosrun hg_gui hg_gui
         └── turtlebot3_teleop
 
 ```
+
+### 生成deb功能包
+```
+bloom-generate rosdebian --os-name ubuntu --ros-distro melodic
+
+fakeroot debian/rules binary
+```
+
+

@@ -1407,7 +1407,7 @@
       <property name="geometry">
        <rect>
         <x>250</x>
-        <y>20</y>
+        <y>70</y>
         <width>89</width>
         <height>25</height>
        </rect>
@@ -1914,8 +1914,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>98</width>
-             <height>28</height>
+             <width>100</width>
+             <height>30</height>
             </rect>
            </property>
            <attribute name="label">
@@ -2119,8 +2119,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>251</width>
+           <height>79</height>
           </rect>
          </property>
          <attribute name="label">
@@ -2168,8 +2168,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>100</width>
+           <height>30</height>
           </rect>
          </property>
          <attribute name="label">
@@ -2213,13 +2213,26 @@
       <property name="geometry">
        <rect>
         <x>250</x>
-        <y>60</y>
+        <y>40</y>
         <width>89</width>
         <height>25</height>
        </rect>
       </property>
       <property name="text">
        <string>Load_Sim</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_scara_build_world">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Build_Sim</string>
       </property>
      </widget>
     </widget>

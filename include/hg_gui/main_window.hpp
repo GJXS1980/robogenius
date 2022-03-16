@@ -89,6 +89,9 @@ public Q_SLOTS:
     void Robot_Scara_MoveP_LineEdit_Enable(bool enable);
 
 private slots:
+    void on_pushButton_scara_build_world_clicked();
+
+private slots:
     void on_pushButton_scara_load_world_clicked();
 
 private slots:
@@ -257,6 +260,7 @@ private:
     QProcess *bash_place_check;
     QProcess *bash_nav_world;
     QProcess *bash_load_scara_world;
+    QProcess *bash_build_scara_world;
 //    QProcess *bash_voice_nav;
     QTimer *pTimer;
     QTime baseTime;
